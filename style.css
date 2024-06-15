@@ -170,6 +170,10 @@ body {
     border-color: var(--outline);
 }
 
+.input-container.invalid input {
+    border-color: var(--error);
+}
+
 /* Chrome, Safari, Edge, Opera */
 .input-container input::-webkit-outer-spin-button,
 .input-container input::-webkit-inner-spin-button {
@@ -183,8 +187,13 @@ body {
 }
 
 .input-container span {
+    display: none;
     font-size: var(--font-text-error);
     color: var(--error);
+}
+
+.input-container.invalid span {
+    display: block;
 }
 
 button {
