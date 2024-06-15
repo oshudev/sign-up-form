@@ -4,8 +4,70 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
         <title>TOP | Sign up form</title>
     </head>
-    <body></body>
+    <body>
+        <main class="h-wrapper">
+            <div class="img-container-left">
+                <div class="logo">
+                    <img
+                        src="./assets/images/odin-lined.png"
+                        alt="odin-logo"
+                        class="logo__img"
+                    />
+                    <div class="logo__text">ODIN</div>
+                </div>
+            </div>
+            <div class="content-container-right">
+                <div class="text-container">
+                    <p>
+                        This is not a real online service! You know you need
+                        something like this in your life to help you realize
+                        your deepest dreams.
+                    </p>
+                    <p>Sign up now to get started.</p>
+                    <p>You know you want to.</p>
+                </div>
+                <form action="" id="create-account">
+                    <div class="input-container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <div class="input-container">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="number" id="phone-number" />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            id="confirm-password"
+                        />
+                        <span data-error="false" class="err-msg"></span>
+                    </div>
+                    <button>Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+            </div>
+        </main>
+    </body>
 </html>
